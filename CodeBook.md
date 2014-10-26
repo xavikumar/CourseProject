@@ -1,6 +1,6 @@
 DATA-DICTIONARY - COURSE PROJECT (Getting & CLeaning Data)
 
-The database used in this porject is Human Activity Recognition Using Smartphones Dataset.
+The database used in this project is Human Activity Recognition Using Smartphones Dataset.
 Feature selection is done from the list of variables in the original dataset. Features having mean and standard deviation are taken to form set of variables in this course project. This was done as per step2 mentioned in the description of this course project. 46 variables having mean values and 33 variables having standard deviation are choosen to form a new set of variables, containing 79 variables in total. All the 79 variables are coded following :
 
 [1] "TimeDomain_MEAN_BodyAccleration_Xdirection"
