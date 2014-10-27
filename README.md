@@ -20,7 +20,8 @@ The dataset includes the following files:
 =================================================
 
 A new data set is formed as per the CodeBook. New data set contains two IDs, one is Subject and second in Activity Labels.
-New data set contains 79 variables.
+There are 30 subjects and 6 activity labels.
+New data set contains 180 observations, each containing 79 new variables. These new variables are the average values of subsequent variables for every IDs.
 
 
 
