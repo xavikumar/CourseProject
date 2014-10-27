@@ -1,7 +1,30 @@
 DATA-DICTIONARY - COURSE PROJECT (Getting & CLeaning Data)
 
+
+Description of the data
+=============================
 The database used in this project is Human Activity Recognition Using Smartphones Dataset.
 Feature selection is done from the list of variables in the original dataset. Features having mean and standard deviation are taken to form set of variables in this course project. This was done as per step2 mentioned in the description of this course project. 46 variables having mean values and 33 variables having standard deviation are choosen to form a new set of variables, containing 79 variables in total. All the 79 variables are coded following :
+=============================
+
+
+Description of transformations and different techniques performed to clean up the data
+=============================
+1. xTrain and xTest are joined together to form x dataset
+2. yTrain and yTest are joined together to form y dataset
+3. subjectTrain and subjectTest are joined to form subject dataset
+4. subject, y and activity labels datasets are joined together to form yNew dataset containing IDs
+5. mean and standard deviation for each measurements are subsetted from x dataset to form xNew 
+6. labelling the data set with variable names as described in CODEBOOK
+7. xNew & yNew datasets are joined to make one final dataset xy
+8. to create a tidy set, xy is melted to form long tidy dataset xyMelt
+9. to create a tidy set, xyMelt is casted back to form "output" dataset
+10. Finally, output.txt contains output dataset
+=============================
+
+
+Description of variables::
+=============================
 
 [1] "TimeDomain_MEAN_BodyAccleration_Xdirection"
 	Mean of Body Acceleration in X direction, for Time Domain Signal
@@ -239,3 +262,6 @@ Feature selection is done from the list of variables in the original dataset. Fe
                     
 [79] "FreqDomain_STD_BodyGyroJerk_Magnitude"
 	Standard Deviation of Body Gyro Jerk Magnitude, for Frequency Domain Signal      
+
+=============================
+
