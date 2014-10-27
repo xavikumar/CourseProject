@@ -265,3 +265,25 @@ Description of variables::
 
 =============================
 
+Description of IDs::
+=============================
+Each subject and each activity labels are used to create IDs. Total number of subjects is 30 and total number of activity is 6. Hence, total 180 observations are there in the tidy dataset.
+=============================
+
+1.            1.LAYING     => Subject 1 is Laying
+2            1.SITTING     => Subject 1 is Sitting
+3           1.STANDING     => Subject 1 is Standing
+4            1.WALKING     => Subject 1 is Walking
+5 1.WALKING_DOWNSTAIRS     => Subject 1 is Walking downstairs
+6   1.WALKING_UPSTAIRS     => Subject 1 is Walking upstairs
+1.            2.LAYING     => Subject 2 is Laying
+2            2.SITTING     => Subject 2 is Sitting
+3           2.STANDING     => Subject 2 is Standing
+4            2.WALKING     => Subject 2 is Walking
+5 2.WALKING_DOWNSTAIRS     => Subject 2 is Walking downstairs
+6   2.WALKING_UPSTAIRS     => Subject 2 is Walking upstairs
+
+Similarly for each subject i.e from 3 to 30.
+=============================
+
+
