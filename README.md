@@ -1,66 +1,26 @@
 CourseProject
 =============
 
-Course Project of Getting &amp; Cleaning Data
-# Getting and Cleaning Data (3rd Course in specialization)
-# Course Project
+Course Project of Getting and Cleaning Data
 
-# Reading all the required data files
-# Reading training data set
-xTrain, yTrain, subjectTrain
+The database used in this project is subset of Human Activity Recognition Using Smartphones Dataset.
 
-# Reading testing data set
-xTest, yTest, subjectTest
+The dataset includes the following files:
+=========================================
 
-# Reading features & activity labels data set
-feature, activityLabels
+- 'README.txt'
 
-## Step 1, Merges the training and the test sets to create one data set
-x = rbind(xTrain,xTest); dim(x)
-y = rbind(yTrain,yTest); dim(y)
+- 'CodeBook': Shows information about the variables used on the feature vector.
+- 
+- 'run_analysis.R' : Performs all required 5 steps and generates a tidy data set.
+- 
+- 'output.txt' : Calculates average of each variables for each subject and each activity.
 
-# Creating subject data set from training & testing data sets
-subject = rbind(subjectTrain,subjectTest); dim(subject)
+- 'Human Activity Recognition Using Smartphones Dataset' : Files from this dataset is used to generate output.txt
+=================================================
 
-## STEP 2, Extracts only the measurements on the mean and standard deviation for each measurements
+A new data set is formed as per the CodeBook. New data set contains two IDs, one is Subject and second in Activity Labels.
+New data set contains 79 variables.
 
-# Subsetting mean measurements from feature data set and creating featureMean
-# Subsetting standard deviation measurements from feature data set and creating featureStd
 
-# Creating new feature data set containing mean & standard deviation features
-featureMeanStd = rbind(featureMean,featureStd)
-
-# Subsetting mean & standard deviation measurements from original data set
-xMeanStd = x[,featureMeanStd$V1]
-
-## Step 3, Use descriptive activity names to name the activities in the data set
-# Merging y data to subject data
-ySubject = cbind(subject,y)
-
-# Merging ySubject with activity labels 
-
-# Step 4, Appropriately labels the data set with descriptive variable names
-
-# Labelling the data set with variable names as described in CODEBOOK (created by me)
-
-newfeatureMeanStd contains new names of variables
-
-# Subsetting mean & standard deviation measurements from the original data set
-
-# Step 5, From the data set in step 4, creates a second, independent tidy data set with 
-# the average of each variable for each activity and each subject
-
-# Creating new IDs using Subject and Activity Labels in yNew
-# An Ids represents each activity and each subject
-# Combining xNew & yNew to make one final data set
-
-# Making skiny data set
-# Melting the data set
-xyMelt <- melt(xy, id = c("Subject", "Activity.Labels","IDs"), measure.vars= c(4:82))
-
-# Casting the data to calculate average of each variable for each IDs
-output <- dcast(xyMelt, IDs ~ variable, mean )
-
-# Writing the output to a text file
-write.table(output, "./data/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/output.txt", row.name=FALSE)
 
