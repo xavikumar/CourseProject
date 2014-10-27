@@ -4,8 +4,7 @@ DATA-DICTIONARY - COURSE PROJECT (Getting & CLeaning Data)
 Description of the data
 =============================
 The database used in this project is Human Activity Recognition Using Smartphones Dataset.
-Feature selection is done from the list of variables in the original dataset. Features having mean and standard deviation are taken to form set of variables in this course project. This was done as per step2 mentioned in the description of this course project. 46 variables having mean values and 33 variables having standard deviation are choosen to form a new set of variables, containing 79 variables in total. All the 79 variables are coded following :
-=============================
+Feature selection is done from the list of variables in the original dataset. Features having mean and standard deviation are taken to form set of variables in this course project. This was done as per step2 mentioned in the description of this course project. 46 variables having mean values and 33 variables having standard deviation are choosen to form a new set of variables, containing 79 variables in total.
 
 
 Description of transformations and different techniques performed to clean up the data
@@ -20,11 +19,12 @@ Description of transformations and different techniques performed to clean up th
 8. to create a tidy set, xy is melted to form long tidy dataset xyMelt
 9. to create a tidy set, xyMelt is casted back to form "output" dataset
 10. Finally, output.txt contains output dataset
-=============================
+
 
 
 Description of variables::
 =============================
+All the 79 variables are coded following :
 
 [1] "TimeDomain_MEAN_BodyAccleration_Xdirection"
 	Mean of Body Acceleration in X direction, for Time Domain Signal
@@ -263,27 +263,24 @@ Description of variables::
 [79] "FreqDomain_STD_BodyGyroJerk_Magnitude"
 	Standard Deviation of Body Gyro Jerk Magnitude, for Frequency Domain Signal      
 
-=============================
 
 Description of IDs::
 =============================
 Each subject and each activity labels are used to create IDs. Total number of subjects is 30 and total number of activity is 6. Hence, total 180 observations are there in the tidy dataset.
-=============================
 
-1.            1.LAYING     => Subject 1 is Laying
-2            1.SITTING     => Subject 1 is Sitting
-3           1.STANDING     => Subject 1 is Standing
-4            1.WALKING     => Subject 1 is Walking
-5 1.WALKING_DOWNSTAIRS     => Subject 1 is Walking downstairs
-6   1.WALKING_UPSTAIRS     => Subject 1 is Walking upstairs
-1.            2.LAYING     => Subject 2 is Laying
-2            2.SITTING     => Subject 2 is Sitting
-3           2.STANDING     => Subject 2 is Standing
-4            2.WALKING     => Subject 2 is Walking
-5 2.WALKING_DOWNSTAIRS     => Subject 2 is Walking downstairs
-6   2.WALKING_UPSTAIRS     => Subject 2 is Walking upstairs
+
+[1]            1.LAYING     => Subject 1 is Laying
+[2]            1.SITTING     => Subject 1 is Sitting
+[3]           1.STANDING     => Subject 1 is Standing
+[4]            1.WALKING     => Subject 1 is Walking
+[5] 1.WALKING_DOWNSTAIRS     => Subject 1 is Walking downstairs
+[6]   1.WALKING_UPSTAIRS     => Subject 1 is Walking upstairs
+[1]            2.LAYING     => Subject 2 is Laying
+[2]            2.SITTING     => Subject 2 is Sitting
+[3]           2.STANDING     => Subject 2 is Standing
+[4]            2.WALKING     => Subject 2 is Walking
+[5] 2.WALKING_DOWNSTAIRS     => Subject 2 is Walking downstairs
+[6]   2.WALKING_UPSTAIRS     => Subject 2 is Walking upstairs
 
 Similarly for each subject i.e from 3 to 30.
-=============================
-
 
