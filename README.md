@@ -3,6 +3,9 @@ CourseProject
 
 Course Project of Getting and Cleaning Data
 
+As, i could not upload my tidy dataset during web submission, because of some Internet issue.
+I have added my tidy dataset in my repo. output.txt file contains my tidy dataset.
+
 The database used in this project is subset of Human Activity Recognition Using Smartphones Dataset.
 
 The dataset includes the following files:
